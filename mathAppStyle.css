@@ -1,3 +1,4 @@
+document.getElementById()
 * {
     border: 2px solid #dedede;
     border-radius: 2px;
@@ -29,4 +30,8 @@ body {
 .invalid {
     color: red;
     border-color: firebrick;
+}
+function changeElementClass(id, className) {
+    var el = document.getElementById(id);
+    el.className = className;
 }
