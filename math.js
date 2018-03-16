@@ -13,9 +13,10 @@ function coefficients() {
         quadratic1 = ((B - radical) / bottom),
         quadratic2 = ((B + radical) / bottom);
     if (isNaN(a) || isNaN(b) || isNaN(c) == true) {
-        return "You have entered something wrong. Plz try again."
-    } else if ((b * b) ) {
-
+        return "You entered an incorrect value for either A, B, or C. Please try again."
+        changeElementClass("invalid")
+    } else if ((radical) < 0) {
+        return "There are no real solutions."
     } else {
         return "The answer is " + quadratic1 + " and " + quadratic2;
     }
